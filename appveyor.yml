@@ -30,6 +30,10 @@ configuration:
 environment:
     matrix:
         - TOOLCHAIN: msvc15
+
+before_build:
+    - cmd: nuget restore
+
 build:
     project: gramdictru.sln
     verbosity: detailed  # quiet|minimal|normal|detailed
