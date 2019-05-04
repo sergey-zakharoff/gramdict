@@ -1,0 +1,36 @@
+0version: 0.1.{build}
+
+image: Visual Studio 2017
+
+init:
+    # секция инициализации, исполняется до клонирования проекта
+    # скорее всего, строчка ниже необязательна (так должно быть по умолчанию),
+    # вместе с тем, она присутствует в официальных примерах, так что пусть будет:
+    # (took from habr.com introduction article - zs [todo]:check&remove)
+    - git config --global core.autocrlf input
+
+branches:
+  only:
+    - master
+    # for initial test only
+    - '#56-integration-for-appvoyer'
+
+clone_folder: c:\test\prj  
+shallow_clone: true              # копируем только последний коммит, без истории (git clone --depth 1)
+
+matrix:
+    fast_finish: false           # не останавливаемся после возникновения ошибки в каком-то из заданий
+
+platform:
+    # будем гонять CI на amd64 и x86...
+    - x64
+    - x86
+
+configuration:
+    - Release
+
+environment:
+    matrix:
+        - TOOLCHAIN: msvc15
+
+
