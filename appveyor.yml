@@ -22,7 +22,6 @@ matrix:
     fast_finish: false           # не останавливаемся после возникновения ошибки в каком-то из заданий
 
 platform:
-    # будем гонять CI на amd64 и x86...
     - x64
     - x86
 
@@ -34,5 +33,5 @@ environment:
         - TOOLCHAIN: msvc15
 build:
     project: gramdictru.sln
-    verbosity: quiet|minimal|normal|detailed
+    verbosity: detailed  # quiet|minimal|normal|detailed
 
