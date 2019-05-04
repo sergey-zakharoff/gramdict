@@ -32,5 +32,7 @@ configuration:
 environment:
     matrix:
         - TOOLCHAIN: msvc15
-
+build:
+    project: gramdictru.sln
+    verbosity: quiet|minimal|normal|detailed
 
