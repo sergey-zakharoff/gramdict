@@ -22,8 +22,7 @@ matrix:
     fast_finish: false           # не останавливаемся после возникновения ошибки в каком-то из заданий
 
 platform:
-    - x64
-    - x86
+    - Any CPU
 
 configuration:
     - Release
