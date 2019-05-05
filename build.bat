@@ -13,3 +13,4 @@ npm install
 cd ..
 
 echo Running build (MSBuild)...
+dotnet publish
