@@ -1,3 +1,5 @@
-dotnet --info  ## || nuget restore
+node --version
+
+dotnet --info
 
 nuget restore
