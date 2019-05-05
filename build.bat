@@ -7,4 +7,7 @@ dotnet --info
 echo Restoring NuGet packages
 nuget restore
 
+echo install webpack
+npm install webpack
+
 echo Running build (MSBuild)...
