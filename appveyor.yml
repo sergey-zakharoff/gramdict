@@ -32,7 +32,7 @@ environment:
         - TOOLCHAIN: msvc15
 
 before_build:
-    - cmd: dotnet build
+    - cmd: nuget restore
 
 build:
     project: gramdictru.sln
