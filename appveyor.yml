@@ -41,9 +41,9 @@ dotnet_csproj:
   informational_version: '{version}'
 
 before_build:
-    - cmd: nuget restore
+    - cmd: dotnet --info  ## || nuget restore
 
 build:
     project: gramdictru.sln
-    verbosity: detailed  # quiet|minimal|normal|detailed
+    verbosity: normal  # quiet|minimal|normal|detailed
 
