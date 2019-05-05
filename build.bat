@@ -8,6 +8,8 @@ echo Restoring NuGet packages
 nuget restore
 
 echo install webpack
-npm install webpack
+cd gramdictru
+npm install
+cd ..
 
 echo Running build (MSBuild)...
