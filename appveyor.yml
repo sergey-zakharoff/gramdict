@@ -30,6 +30,7 @@ configuration:
 environment:
     matrix:
         - TOOLCHAIN: msvc15
+    nodejs_version: "11"
 
 dotnet_csproj:
   patch: true
