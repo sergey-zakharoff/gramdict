@@ -41,7 +41,7 @@ dotnet_csproj:
   informational_version: '{version}'
 
 before_build:
-    - cmd: dotnet --info  ## || nuget restore
+    - cmd: build.bat
 
 build:
     project: gramdictru.sln
