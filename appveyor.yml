@@ -51,4 +51,4 @@ before_build:
 build:
     project: gramdictru.sln
     verbosity: normal  # quiet|minimal|normal|detailed
-
+    publish_wap: true
